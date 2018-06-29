@@ -1,0 +1,21 @@
+Known bugs:
+ - Semester not known. Add to exam dates
+ - Dean buttons not touched
+ - Test Stack, Time and merge for bugs
+
+1.1.1
+April 1, 2018
+ + SDO: Update working Stack, Time and merge needs Testing for bugs
+
+1.1.0
+March 30, 2018
+ + SDO: Changed add/delete button text and tooltip
+ + SDO: Changed "Unscheduled Sections" to "Endorsed Sections"
+ + SDO: Added proctor column to Endorsed Sections
+ / SDO: Initialization for prefetching next time (Query not complete)
+ + SDO: Bulletin print updated
+ + SDO: Dean print updated, needs matching
+
+1.0.0
+March 21, 2018
+ + Defense

@@ -1,0 +1,1 @@
+<?php $logsCountPerPage = 25; ?>
