@@ -1,5 +1,5 @@
 <?php 
-include "../util_dbHandler.php";
+include_once "../util_dbHandler.php";
 
 $stmt = null;
 $stmt = $conn->prepare("SELECT `Bool Val` FROM `dbconfig` WHERE `Name` = 'Exam Visible';");
@@ -17,7 +17,7 @@ $examVisible = $sRow[0];
 	$dayID = is_numeric($_REQUEST['day']) ? $_REQUEST['day'] : "";
 
 
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 	
 	$stmt = null;
 	$stmt = $conn->prepare("CALL `select_exam_dates_ranked`(?)");
@@ -67,7 +67,7 @@ $examVisible = $sRow[0];
 				</div>
 			</div>
 			<div style="display: table; width: 100%" id="dayItemsContainer-<?php echo $dayRow['Id']; ?>"><?php
-				include "fragment_table_exam_schedules_item.php";
+				include_once "fragment_table_exam_schedules_item.php";
 			?></div>
 			<?php
 		}

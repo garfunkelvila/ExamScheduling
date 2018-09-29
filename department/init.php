@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
 	$stmt = null;
 	$stmt = $conn->prepare("SELECT COUNT(`Dean_Id`) FROM `departments` WHERE `Dean_Id` = ?");
 	$stmt->bind_param('s',$_SESSION['ID']);
@@ -78,7 +78,7 @@
 		</div>
 	</div>
 	<script  type="text/javascript" src="../../scripts/sidebar.js"></script>
-	<?php #include "fragment_header.php" ?>
+	<?php #include_once "fragment_header.php" ?>
 	<script src="/scripts/jquery-3.2.1.min.js"></script>
 	<div class="w3-margin-top w3-margin-bottom w3-padding">
 		<!--div align="center">
@@ -93,7 +93,7 @@
 			<div class="w3-container" id="contentContainer"></div>
 		</div>
 	</div>
-	<?php include "fragment_footer.php" ?>
+	<?php include_once "fragment_footer.php" ?>
 	<script type="text/javascript">
 		function switchView(id){
 			var url = '';

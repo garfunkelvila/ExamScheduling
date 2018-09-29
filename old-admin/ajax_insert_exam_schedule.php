@@ -1,6 +1,6 @@
 <?php
-	include("../util_dbHandler.php");
-	include("../util_validations.php");
+	include_once("../util_dbHandler.php");
+	include_once("../util_validations.php");
 	$json = array(
 		'sucess' => false,
 		'result' => 0
@@ -40,7 +40,7 @@
 			#Have time, room & proctor match? Yes
 			if(isset($_REQUEST['merge']) && $_REQUEST['merge'] == 'true'){
 				$bypass = '1';	#it is used by the insert
-				include("ajax_insert_exam_schedule_insert_routine.php");
+				include_once("ajax_insert_exam_schedule_insert_routine.php");
 			}
 			else{
 				$json['sucess'] = False;
@@ -51,7 +51,7 @@
 		else{
 			#Have time, room & proctor match? No
 			$bypass = '0';	#it is used by the insert
-			include("ajax_insert_exam_schedule_insert_routine.php");
+			include_once("ajax_insert_exam_schedule_insert_routine.php");
 		}
 	}
 ?>

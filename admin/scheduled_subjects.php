@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
 	#TRANSFERED AND COPIED MIGHT SOON BE OBSOLETE
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
 	$locale = 'en_US';
 	$nf = new NumberFormatter($locale, NumberFormatter::ORDINAL);
 
@@ -13,7 +13,7 @@
 	$sRow = $sResult->fetch_row();
 	$endorsed = $sRow[0];
 	$scheduled = $sRow[1];
-	include("../util_check_stage.php");
+	include_once("../util_check_stage.php");
 
 	$stmt = null;
 	$stmt = $conn->prepare("SELECT COUNT(`id`) FROM `exam_dates`");
@@ -70,7 +70,7 @@
 			}
 		}
 	</script>
-	<?php include "fragment_header.php" ?>
+	<?php include_once "fragment_header.php" ?>
 	<div id="editSked" class="w3-modal">
 		<div class="w3-padding">
 			<div style="margin: auto;" class="loader"></div>
@@ -149,11 +149,11 @@
 				?>
 			</div>
 			<?php 
-				include "s_sect/fragment_scheduled_subjects.php"; 
+				include_once "s_sect/fragment_scheduled_subjects.php"; 
 			?>		
 		</div>
 	</div>
-	<?php include "fragment_footer.php" ?>
+	<?php include_once "fragment_footer.php" ?>
 	<script type="text/javascript">
 		function showEditSked(id){
 			document.getElementById('editSked').style.display='inline';

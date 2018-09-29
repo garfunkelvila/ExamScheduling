@@ -1,6 +1,6 @@
 <?php
-	include("../util_dbHandler.php");
-	include("util_logs_vars.php");
+	include_once("../util_dbHandler.php");
+	include_once("util_logs_vars.php");
 	$from = ($_REQUEST['page'] - 1) * $logsCountPerPage;
 	$stmt = null;
 	$stmt = $conn->prepare("CALL `select_logs_user_actions`(?,?);");

@@ -5,7 +5,7 @@
 	<div style="display: table-cell; width: 0.5in;"><b>Action</b></div>
 </div>
 <?php
-	include "../../util_dbHandler.php";
+	include_once "../../util_dbHandler.php";
 	$stmt = null;
 	$stmt = $conn->prepare("CALL `select_courses_with_total`(?);");#This query requires dept user ID, unless will return null
 	$stmt->bind_param("s",$_SESSION["ID"]);

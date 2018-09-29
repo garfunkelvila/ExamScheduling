@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
 	#THIS THING IS TO BE OBSOLETE
 ?>
 <html>
@@ -26,7 +26,7 @@
 </head>
 <body>
 	<script src="/scripts/jquery-3.2.1.min.js"></script>
-	<?php include "fragment_header.php" ?>
+	<?php include_once "fragment_header.php" ?>
 	<div class="w3-row w3-margin-top">
 		<div class="my-third w3-container">
 			<div class="w3-hide-small">
@@ -53,7 +53,7 @@
 				</select>
 				<select class="my-input-1" name="optDepartment" onchange="checkOptDept(this); updateOptCourse(this.value);">
 					<option value="-">Select a department</option>
-					<?php include "fragment_option_department_names.php" ?>
+					<?php include_once "fragment_option_department_names.php" ?>
 				</select>
 				<select class="my-input-1" name="optCourse" id="courseContainer" onchange="checkOptCourse(this)">
 					<option value="-">Select a department first</option>
@@ -65,11 +65,11 @@
 			<div class="w3-row">
 			</div>
 			<div>
-				<?php include "fragment_table_classes.php" ?>
+				<?php include_once "fragment_table_classes.php" ?>
 			</div>
 		</div>
 	</div>
-	<?php #include "fragment_footer.php" ?>
+	<?php #include_once "fragment_footer.php" ?>
 	<script type="text/javascript">
 		//-- FORM CODES ----------------------------------------
 		function checkOptLevel(e){

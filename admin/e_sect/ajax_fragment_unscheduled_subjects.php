@@ -1,5 +1,5 @@
 <?php
-	include "../../util_dbHandler.php";
+	include_once "../../util_dbHandler.php";
 	#$stmt = null;
 	#$stmt = $conn->prepare("SELECT `isEndorsed` FROM `departments` WHERE `Dean_Id` = ?");
 	#$stmt->bind_param('s',$_SESSION['eId']);

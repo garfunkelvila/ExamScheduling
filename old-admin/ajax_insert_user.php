@@ -1,7 +1,7 @@
 <?php
 	#MIGHT BE REMOVED IN THE FUTURE,
-	include("../util_dbHandler.php");
-	include("../util_validations.php");
+	include_once("../util_dbHandler.php");
+	include_once("../util_validations.php");
 	$json = array(
 		'sucess' => false,
 		'result' => 0

@@ -25,7 +25,7 @@
 			</select>
 			<select class="my-input-1" name="optDepartment" onchange="checkOptDept(this)">
 				<option value="-">Please select a department</option>
-				<?php include "fragment_option_department_names.php" ?>
+				<?php include_once "fragment_option_department_names.php" ?>
 			</select>
 			<select class="my-input-1" name="optCourse" id="courseContainer" onchange="checkOptCourse(this)">
 				<option value="-">Please select a department first</option>
@@ -39,7 +39,7 @@
 			<input class="my-input-1" type="search" id="txbSearchDept" placeholder="Filter Subjects" onkeyup="subjSearch(this.value)">
 			<select class="my-input-1" name="optDepartment" onchange="filterOptDept(this)">
 				<option value="-">All departments</option>
-				<?php include "fragment_option_department_names.php" ?>
+				<?php include_once "fragment_option_department_names.php" ?>
 			</select>
 			<!--div class="w3-cell-row w3-border-bottom w3-container">
 				<div class="w3-cell"><b>Name</b></div>

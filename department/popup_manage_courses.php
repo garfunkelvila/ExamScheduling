@@ -19,7 +19,7 @@ OBSOLETE??????????
 			<input class="my-input-1" type="text" name="chrCode" style="text-transform: capitalize;" placeholder="Code" required="" maxlength="1">
 			<select class="my-input-1" name="optDepartment" onchange="checkOptDept(this)">
 				<option value="-">Please select a department</option>
-				<?php include "fragment_option_department_names.php" ?>
+				<?php include_once "fragment_option_department_names.php" ?>
 			</select>
 			<button class="my-button my-blue w3-section">Add</button>
 		</form>

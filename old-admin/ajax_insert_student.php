@@ -1,6 +1,6 @@
 <?php
 	#Used in registering the student
-	include("../util_dbHandler.php");
+	include_once("../util_dbHandler.php");
 
 	$json = array(
 		'sucess' => false,
@@ -8,7 +8,7 @@
 	);
 	$resultArray = array();
 	#***************************
-	include("../util_validations.php");
+	include_once("../util_validations.php");
 	if (isNotEmpty($_REQUEST['idNumber']) && isNotEmpty($_REQUEST['fName']) && isNotEmpty($_REQUEST['lName'])) {
 		$password = getDefPassword($_REQUEST['idNumber']);
 		$stmt = null;

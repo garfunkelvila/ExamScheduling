@@ -1,8 +1,8 @@
 <?php
 	#TRANSFERED AND COPIED MIGHT SOON BE OBSOLETE
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
-	include("../util_check_stage.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
+	include_once("../util_check_stage.php");
 
 	$locale = 'en_US';
 	$nf = new NumberFormatter($locale, NumberFormatter::ORDINAL);
@@ -45,7 +45,7 @@
 	<script src="/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 	<script src="/scripts/jquery-ui-timepicker-addon.js"></script>
 	
-	<?php include "fragment_header.php" ?>
+	<?php include_once "fragment_header.php" ?>
 	<div class="w3-row w3-margin-top">
 		<div class="my-third w3-container">
 			<div class="w3-hide-small">
@@ -81,10 +81,10 @@
 		<div class="w3-rest w3-container">
 			<h5>Unscheduled Sections</h5>
 			<?php 
-				include "e_sect/fragment_unscheduled_subjects.php"; 
+				include_once "e_sect/fragment_unscheduled_subjects.php"; 
 			?>		
 		</div>
 	</div>
-	<?php include "fragment_footer.php" ?>
+	<?php include_once "fragment_footer.php" ?>
 </body>
 </html>

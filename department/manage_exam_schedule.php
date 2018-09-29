@@ -1,8 +1,8 @@
 <?php
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
-	include("../util_check_stage.php");
-	include("util_check_isEndorsed.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
+	include_once("../util_check_stage.php");
+	include_once("util_check_isEndorsed.php");
 
 
 	$locale = 'en_US';
@@ -107,7 +107,7 @@
 		</script><?php
 	}?>
 	
-	<?php include "fragment_header.php" ?>
+	<?php include_once "fragment_header.php" ?>
 	<div class="w3-row w3-margin-top">
 		<div class="my-third w3-container">
 			<div class="w3-hide-small">
@@ -116,7 +116,7 @@
 				<br>
 				<hr>
 			</div>
-			<?php include 'fragment_starter_warning.php'; ?>
+			<?php include_once 'fragment_starter_warning.php'; ?>
 			<?php 
 				if($stage == 2 && $isEndorsed == false){
 					echo "Period: ". $per . "<br>";
@@ -171,14 +171,14 @@
 			</div>
 			<?php
 				if (isset($_REQUEST["dayRank"])){
-					include "mex/fragment_mex_day_v2.php";
+					include_once "mex/fragment_mex_day_v2.php";
 				}
 				else{
-					include "mex/fragment_mex_home_v2.php"; 
+					include_once "mex/fragment_mex_home_v2.php"; 
 				}
 			?>			
 		</div>
 	</div>
-	<?php include "fragment_footer.php" ?>
+	<?php include_once "fragment_footer.php" ?>
 </body>
 </html>

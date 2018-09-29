@@ -3,8 +3,8 @@
 	onclick="refreshLogList(1)">
 	<i class="fas fa-angle-double-left" aria-hidden="true"></i></a>
 <?php
-	include("../util_dbHandler.php");
-	include("util_logs_vars.php");
+	include_once("../util_dbHandler.php");
+	include_once("util_logs_vars.php");
 	$logsStart;
 	$logsEnd;
 

@@ -1,5 +1,5 @@
 <div id="tabContainer">
-	<?php include "s_sect/ajax_fragment_scheduled_subjects.php"; ?>
+	<?php include_once "s_sect/ajax_fragment_scheduled_subjects.php"; ?>
 </div>
 <script type="text/javascript">
 	function reloadContent(){

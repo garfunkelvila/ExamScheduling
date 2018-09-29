@@ -4,7 +4,7 @@
 	}
 	else{
 		# IT MEANS IT IS CALLED FROM AJAX
-		include "../../util_dbHandler.php";
+		include_once "../../util_dbHandler.php";
 		$yearLvl = $_REQUEST['level'];
 		$locale = 'en_US';
 	}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
 ?>
 <html>
 <head>
@@ -25,7 +25,7 @@
 </head>
 <body>
 	<script src="/scripts/jquery-3.2.1.min.js"></script>
-	<?php include "fragment_header.php" ?>
+	<?php include_once "fragment_header.php" ?>
 	<div class="w3-row w3-margin-top">
 		<div class="my-third w3-container">
 			<div class="w3-hide-small">
@@ -36,7 +36,7 @@
 			</div>
 
 			<em class="w3-tiny" style="text-align: justify;">Please do take note that professors registered by you can only be seen by you.</em>
-			<?php include 'fragment_starter_warning.php'; ?>
+			<?php include_once 'fragment_starter_warning.php'; ?>
 		</div>
 		<div class="w3-rest w3-container">
 			<h3>Professors manager</h3>
@@ -102,7 +102,7 @@
 			<div class="">
 				<h5>My Professors</h5>
 				<div class="w3-border-blue w3-border-top w3-container" style="width: 100%; display: table; max-width: 8in;" id="profContainer">
-					<?php #include 'm_prof/ajax_fragment_table_professors.php'; ?>
+					<?php #include_once 'm_prof/ajax_fragment_table_professors.php'; ?>
 				</div>
 				<script type="text/javascript">
 					function btnEditProf(id){
@@ -166,9 +166,9 @@
 					refreshMyProfessors();
 				</script>
 			</div>
-				<?php include 'm_prof/ajax_fragment_table_professors_no_dept.php'; ?>
+				<?php include_once 'm_prof/ajax_fragment_table_professors_no_dept.php'; ?>
 		</div>
 	</div>
-	<?php #include "fragment_footer.php" ?>
+	<?php #include_once "fragment_footer.php" ?>
 </body>
 </html>

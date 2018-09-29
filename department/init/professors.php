@@ -1,6 +1,6 @@
 <?php
-	include "../../util_dbHandler.php";
-	include("../util_check_session.php");
+	include_once "../../util_dbHandler.php";
+	include_once("../util_check_session.php");
 ?>
 <div class="views" id="view-4">
 	<h4 class="w3-border-bottom w3-border-blue">Professors</h4>

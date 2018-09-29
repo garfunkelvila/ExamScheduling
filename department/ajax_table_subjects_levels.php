@@ -1,6 +1,6 @@
 <?php
 	#OBSOLETE
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 	$locale = 'en_US';
 	$nf = new NumberFormatter($locale, NumberFormatter::ORDINAL);
 
@@ -15,9 +15,9 @@
 
 			?><b class="w3-container" style="display: table-row;"><?php echo $nf->format($lvlRow['Year Level']) ?> Year</b><?php
 			?><div style="display: table-row;">
-				<div class="w3-border-blue w3-border-top" style="display: table-cell; max-width: 50%"><?php include "fragment_subjects_items.php"; ?></div>
+				<div class="w3-border-blue w3-border-top" style="display: table-cell; max-width: 50%"><?php include_once "fragment_subjects_items.php"; ?></div>
 				<div class="w3-border-blue w3-border-left" style="display: table-cell;"></div>
-				<div class="w3-border-blue w3-border-top" style="display: table-cell; max-width: 50%"><?php include "fragment_sections_items.php"; ?></div>
+				<div class="w3-border-blue w3-border-top" style="display: table-cell; max-width: 50%"><?php include_once "fragment_sections_items.php"; ?></div>
 			</div><?php
 		}
 	}

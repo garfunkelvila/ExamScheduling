@@ -1,5 +1,5 @@
 <?php
-	include "../../util_dbHandler.php";
+	include_once "../../util_dbHandler.php";
 	$dev = isset($_GET['dev']) && $_GET['dev'] == '1' ? true : false;
 
 	$stmt = null;

@@ -1,6 +1,6 @@
 <?php
 	#This thing returns the sections that doesnt have schedules
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 	$json = array(
 		'sucess' => false,
 		'result' => 0

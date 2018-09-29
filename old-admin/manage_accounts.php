@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
 ?>
 <html>
 <head>
@@ -14,7 +14,7 @@
 </head>
 <body>
 	<script src="/scripts/jquery-3.2.1.min.js"></script>
-	<?php include "fragment_header.php" ?>
+	<?php include_once "fragment_header.php" ?>
 	<div class="w3-row w3-margin-top">
 		<div class="my-third w3-container">
 			<img class="w3-hide-small" src="/images/sys-logo.png" style="width: 100%">
@@ -28,10 +28,10 @@
 			<em class="w3-tiny">The default password for every user is abcd1234</em><br>
 		</div>
 		<div class="w3-rest w3-container" style="min-height: 7in;">
-			<?php include "fragment_registered_accounts.php" ?>
+			<?php include_once "fragment_registered_accounts.php" ?>
 		</div>
 	</div>
-	<?php include "fragment_footer.php" ?>
+	<?php include_once "fragment_footer.php" ?>
 	<script type="text/javascript">
 		function showPopup(dir, name){
 			//second parameter helps prevents duplication of window

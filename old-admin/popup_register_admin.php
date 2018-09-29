@@ -1,5 +1,5 @@
 <?php 
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 	$stmt = null;
 	#$stmt = $conn->prepare("CALL `insert_student_pre_reg_id`()");
 	#$stmt->execute();

@@ -1,5 +1,5 @@
 <?php 
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 	
 
 	#$stmt = null;
@@ -27,7 +27,7 @@
 			
 			<select class="my-input-1" style="display: table-cell;" name="optDepartment" onchange="updateOptCourse(this.value)">
 				<option value="0">Select a department</option>
-				<?php include "fragment_option_department_names.php" ?>
+				<?php include_once "fragment_option_department_names.php" ?>
 			</select>
 			<div style="display: table;">
 				<div style="display: table-cell;"><input class="my-input-1"  type="text" id="fName" placeholder="First name" required=""></div>

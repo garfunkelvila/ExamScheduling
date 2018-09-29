@@ -1,7 +1,7 @@
 <?php
-	include("../../util_dbHandler.php");
-	include("../util_check_isEndorsed.php");
-	include("../../util_check_stage.php");
+	include_once("../../util_dbHandler.php");
+	include_once("../util_check_isEndorsed.php");
+	include_once("../../util_check_stage.php");
 ?>
 <div class="w3-container" style="display: table-row;">
 	<div style="display: table-cell; text-align: center; width: 1in;"><b>Section Code</b></div>

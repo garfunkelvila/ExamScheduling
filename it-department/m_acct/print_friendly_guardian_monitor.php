@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	include "../../util_dbHandler.php";
+	include_once "../../util_dbHandler.php";
 	$name = "";
 
 	$stmt = null;

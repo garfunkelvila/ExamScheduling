@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
 	#TRANSFERED AND COPIED MIGHT SOON BE OBSOLETE
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
 ?>
 <html>
 <head>
@@ -34,7 +34,7 @@
 	<script src="/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 	<script src="/scripts/jquery-ui-timepicker-addon.js"></script>
 	
-	<?php include "fragment_header.php" ?>
+	<?php include_once "fragment_header.php" ?>
 	<div class="w3-row w3-margin-top">
 		<div class="my-third w3-container">
 			<div class="w3-hide-small">
@@ -63,7 +63,7 @@
 						?><a href="print_friendly_exam_schedules.php" target="_blank"><button class="w3-button my-blue" style="width: 100%" type="button">View Printer Friendly (All days)</button></a><?php
 					}
 					elseif ($_REQUEST["view"] == 3){
-						#include "tbd.php"; 
+						#include_once "tbd.php"; 
 					}
 				}
 			?>
@@ -79,22 +79,22 @@
 			<?php 
 				if (isset($_REQUEST["view"])){
 					if ($_REQUEST["view"] == 1){
-						include "fragment_unscheduled_subjects.php"; 
+						include_once "fragment_unscheduled_subjects.php"; 
 					}
 					elseif ($_REQUEST["view"] == 2){
-						include "fragment_scheduled_subjects.php"; 
+						include_once "fragment_scheduled_subjects.php"; 
 					}
 					elseif ($_REQUEST["view"] == 3){
-						include "fragment_rooms.php"; 
+						include_once "fragment_rooms.php"; 
 					}
 				}
 				else{
-					include "fragment_manage_schedule_home.php"; 
+					include_once "fragment_manage_schedule_home.php"; 
 				}
 			?>		
 		</div>
 	</div>
-	<?php include "fragment_footer.php" ?>
+	<?php include_once "fragment_footer.php" ?>
 	<script src="fragment_table_exam_schedules.js">//Contains filler of datalists</script>
 </body>
 </html>

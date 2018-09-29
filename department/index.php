@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
 	$stmt = null;
 	$stmt = $conn->prepare("SELECT COUNT(`Dean_Id`) FROM `departments` WHERE `Dean_Id` = ?");
 	$stmt->bind_param('s',$_SESSION['ID']);
@@ -10,13 +10,13 @@
 	$sRow = $sResult->fetch_row();
 	$isDeptExist = $sRow[0];
 	if($isDeptExist == 0){
-		include 'init.php';
+		include_once 'init.php';
 		exit;
 	}
 
-	include("../util_check_stage.php");
-	include("util_check_isEndorsed.php"); #Also carries dept name and accr
-	include("../util_greeting.php");
+	include_once("../util_check_stage.php");
+	include_once("util_check_isEndorsed.php"); #Also carries dept name and accr
+	include_once("../util_greeting.php");
 ?>
 
 <html>
@@ -58,7 +58,7 @@
 </head>
 <body>
 	<script src="/scripts/jquery-3.2.1.min.js"></script>
-	<?php include "fragment_header.php" ?>
+	<?php include_once "fragment_header.php" ?>
 	<div class="w3-row w3-margin-top">
 		<div class="w3-container" style="">
 			<div align="center">
@@ -69,7 +69,7 @@
 			</div>
 			<br><br><hr>
 			<div class="w3-center">
-				<?php include "../fragment_changepass_card.php" ; ?>
+				<?php include_once "../fragment_changepass_card.php" ; ?>
 				<a href="manage_exam_schedule.php" class="w3-card-4 w3-margin home-link" style="overflow: auto; height: 1.5in;">
 					<header class="w3-container <?php echo ($isEndorsed || $stage != 2) ? 'my-blue' : 'w3-red'; ?>">
 						<h6 style=""><?php echo $isEndorsed ? 'View Endorsed' : 'Endorse Schedules'; ?></h6>
@@ -106,7 +106,7 @@
 			
 		</div>
 	</div>
-	<?php include "fragment_footer.php" ?>
+	<?php include_once "fragment_footer.php" ?>
 	<script type="text/javascript">
 	</script>
 </body>

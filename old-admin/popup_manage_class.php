@@ -1,5 +1,5 @@
 <?php 
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 	$stmt = null;
 	$stmt = $conn->prepare("SELECT `subjects`.`Code`, `classes`.`Section Code Full` FROM `classes` JOIN `subjects` ON `classes`.`Subject Id` = `subjects`.`Id` WHERE `classes`.`Id` = ?");
 	$stmt->bind_param('s', $_REQUEST['classId']);

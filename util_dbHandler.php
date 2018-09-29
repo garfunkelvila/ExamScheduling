@@ -14,7 +14,7 @@
 	if (session_status() == PHP_SESSION_NONE){
 		session_start();
 	}
-	$conn = new mysqli("localhost", "root", "", "db_Thesis");
+	$conn = new mysqli("localhost", "root", "jSF24cIn", "db_Thesis");
 	if ($conn->connect_error){
 		die("Connection failed: " . mysqli_connect_error());
 	}
@@ -33,9 +33,14 @@
 		$LoggedInName = 'n/a';
 		$LoggedInAccesID = 'n/a';
 	}
-	$stmt = null;
-	$stmt = $conn->prepare("CALL `insert_logs_page_visit`(?,?,?,?,?,?,?,?);");
-	$stmt->bind_param('ssssssss', $HTTP_CLIENT_IP, $HTTP_X_FORWARDED_FOR, $HTTP_X_FORWARDED, $HTTP_FORWARDED_FOR, $HTTP_FORWARDED, $REMOTE_ADDR, $_SERVER['REQUEST_URI'],  $_SERVER['HTTP_USER_AGENT']);
-	$stmt->execute();
-	include 'util_passCalc.php';
+	$sResult = null;
+	$sRow = null;
+	/*if($_SERVER['PHP_SELF'] != 'ajax_json_login.php'){
+		$stmt = null;
+		$stmt = $conn->prepare("CALL `insert_logs_page_visit`(?,?,?,?,?,?,?,?);");
+		$stmt->bind_param('ssssssss', $HTTP_CLIENT_IP, $HTTP_X_FORWARDED_FOR, $HTTP_X_FORWARDED, $HTTP_FORWARDED_FOR, $HTTP_FORWARDED, $REMOTE_ADDR, $_SERVER['REQUEST_URI'],  $_SERVER['HTTP_USER_AGENT']);
+		$stmt->execute();
+	}*/
+	
+	include_once 'util_passCalc.php';
 ?>

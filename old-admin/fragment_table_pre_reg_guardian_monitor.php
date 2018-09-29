@@ -4,7 +4,7 @@
 	<div class="w3-border-bottom w3-border-blue" style="width: 0.5in; display: table-cell;"></div>
 </div>
 <?php
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 
 	$stmt = null;
 	$stmt = $conn->prepare("CALL `select_pre_reg_guardian_monitor`(?);");

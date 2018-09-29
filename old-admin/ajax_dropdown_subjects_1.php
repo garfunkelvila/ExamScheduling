@@ -1,7 +1,7 @@
 <?php
 	//manage_class_list.php
 	// NOT USED
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 	$json = array(
 		'sucess' => false,
 		'result' => 0
@@ -23,11 +23,11 @@
 				?><div class="w3-cell-row">
 					<div class="my-cell"><b><?php echo $courseRow["Department Name"]; ?></b></div>
 				</div><?php
-				include "ajax_table_course_item.php";
+				include_once "ajax_table_course_item.php";
 			}
 			else{
 				#IF SAME: SKIP HEADER
-				include "ajax_table_course_item.php";
+				include_once "ajax_table_course_item.php";
 			}*/
 			$resultArray[] = $courseRow;
 		}

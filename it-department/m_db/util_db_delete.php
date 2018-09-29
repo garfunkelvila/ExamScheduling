@@ -1,5 +1,5 @@
 <?php
-	include "../../util_dbHandler.php";
+	include_once "../../util_dbHandler.php";
 	if ($LoggedInAccesID != '6'){
 		echo 'STOP!!!';
 		exit;

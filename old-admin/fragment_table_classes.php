@@ -3,7 +3,7 @@
 	<h5 class="w3-border-bottom w3-border-blue " style="display: block;">
 		<b>Course: </b>
 		<select style="border: 0; width: 50%; min-width: 4in; max-width: 6in;" onchange="(fillMainTable(this.value))" id="optCourse">
-			<?php include "fragment_option_course_names.php" ?>
+			<?php include_once "fragment_option_course_names.php" ?>
 		</select>
 	</h5>
 	<div class="w3-cell-row">

@@ -1,7 +1,7 @@
 <?php
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
-	include("util_check_isEndorsed.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
+	include_once("util_check_isEndorsed.php");
 
 
 	$stmt = null;
@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="../css/fontawesome-all.css">
 </head>
 <body>
-	<?php include "fragment_header.php" ?>
+	<?php include_once "fragment_header.php" ?>
 	<script src="/scripts/jquery-3.2.1.min.js"></script>
 	<div class="w3-row w3-margin-top">
 		<div class="my-third w3-container">
@@ -44,7 +44,7 @@
 			</div>
 		</div>
 	</div>
-	<?php include "fragment_footer.php" ?>
+	<?php include_once "fragment_footer.php" ?>
 	
 	<?php
 		if($isDeptExist == '0'){

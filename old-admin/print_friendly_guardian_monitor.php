@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 	$name = "";
 
 	$stmt = null;
@@ -27,7 +27,7 @@
 			<b class="w3-border-bottom w3-border-blue" style="display: table-cell; width: 0.5in"></b>
 		</div>
 		<?php
-			include "../util_dbHandler.php";
+			include_once "../util_dbHandler.php";
 
 			$stmt = null;
 			$stmt = $conn->prepare("CALL `select_guardian_monitor`(?)");

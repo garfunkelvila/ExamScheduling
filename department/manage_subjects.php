@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
 ?>
 <html>
 <head>
@@ -36,7 +36,7 @@
 			}
 		}
 	?><script src="/scripts/jquery-3.2.1.min.js"></script>
-	<?php include "fragment_header.php" ?>
+	<?php include_once "fragment_header.php" ?>
 	<div class="w3-row w3-margin-top">
 		<div class="my-third w3-container">
 			<div class="w3-hide-small">
@@ -79,7 +79,7 @@
 					<br><?php
 				}
 			?>
-			<?php include 'fragment_starter_warning.php'; ?>
+			<?php include_once 'fragment_starter_warning.php'; ?>
 		</div>
 		<div class="w3-rest w3-container">
 			<h3>Subjects and course manager</h3>
@@ -151,7 +151,7 @@
 			</script>
 		</div>
 	</div>
-	<?php #include "fragment_footer.php" ?>
+	<?php #include_once "fragment_footer.php" ?>
 	
 	
 </body>

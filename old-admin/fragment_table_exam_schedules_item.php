@@ -10,7 +10,7 @@
 	<div style='display:table-cell; white-space: nowrap; width: 1in;'><b>Action</b></div>
 </div>
 <?php
-include "../util_dbHandler.php";
+include_once "../util_dbHandler.php";
 
 $targDay = isset($dayRow['Id']) ? $dayRow['Id'] : $_REQUEST['day'];
 

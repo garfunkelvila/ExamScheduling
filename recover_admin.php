@@ -1,6 +1,6 @@
 <?php
 	#MIGHT BE REMOVED IN THE FUTURE,
-	include("util_dbHandler.php");
+	include_once("util_dbHandler.php");
 #--------------------------
 	if ($cIP == '::1'){
 		$password = getAdmPassword();

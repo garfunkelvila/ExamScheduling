@@ -1,5 +1,5 @@
 <?php
-	include "../../util_dbHandler.php";
+	include_once "../../util_dbHandler.php";
 
 	$stmt = null;
 	$stmt = $conn->prepare("CALL `select_prof_department`(?);");

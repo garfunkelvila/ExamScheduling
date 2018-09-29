@@ -1,6 +1,6 @@
 <?php
-	include "../../util_dbHandler.php";
-	include("../util_check_session.php");
+	include_once "../../util_dbHandler.php";
+	include_once("../util_check_session.php");
 
 	$deptName = isset($_COOKIE['deptName']) ? $_COOKIE['deptName'] : '';
 	$deptAccr = isset($_COOKIE['deptAccr']) ? $_COOKIE['deptAccr'] : '';

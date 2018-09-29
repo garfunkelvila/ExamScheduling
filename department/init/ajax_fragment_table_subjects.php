@@ -1,5 +1,5 @@
 <?php 
-	include "../../util_dbHandler.php";
+	include_once "../../util_dbHandler.php";
 	$locale = 'en_US';
 	$nf = new NumberFormatter($locale, NumberFormatter::ORDINAL);
 
@@ -12,7 +12,7 @@
 		while ($lvlRow = $lvlResult->fetch_assoc()) {
 			?><b><?php echo $nf->format($lvlRow['Year Level']) ?> Year</b>
 				<div class="w3-border-blue w3-border-top" id="year-<?php echo $lvlRow['Year Level']?>" style="display: table; width: 100%;">
-				<?php include "../m_subj/ajax_fragment_subjects_items.php"; ?>
+				<?php include_once "../m_subj/ajax_fragment_subjects_items.php"; ?>
 			</div><?php
 		}
 	}

@@ -1,5 +1,5 @@
 <?php
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 
 	$locale = 'en_US';
 	$nf = new NumberFormatter($locale, NumberFormatter::ORDINAL);
@@ -60,7 +60,7 @@
 </head>
 <body>
 	<script src="/scripts/jquery-3.2.1.min.js"></script>
-	<?php include "fragment_header.php"; ?>
+	<?php include_once "fragment_header.php"; ?>
 	<div class="w3-row w3-margin-top">
 		<div class="my-third w3-container">
 			<img class="w3-hide-small" src="/images/sys-logo.png" style="width: 100%">
@@ -78,11 +78,11 @@
 				</table>
 			</form>
 			<div class="" style="max-width: 8in" id="sched-container">
-				<?php include "fragment_exam_schedules.php"; ?>
+				<?php include_once "fragment_exam_schedules.php"; ?>
 			</div>
 		</div>
 	</div>
-	<?php include "fragment_footer.php" ?>
+	<?php include_once "fragment_footer.php" ?>
 	<script type="text/javascript">
 		function search(){
 			return false;

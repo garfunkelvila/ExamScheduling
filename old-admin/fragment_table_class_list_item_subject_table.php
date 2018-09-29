@@ -1,5 +1,5 @@
 <?php
-	//include "../util_dbHandler.php";
+	//include_once "../util_dbHandler.php";
 
 	if (isset($levelRow['Year Level'])){
 		$cYearLevel = $levelRow['Year Level'];
@@ -7,7 +7,7 @@
 	else{
 		$cYearLevel = $_REQUEST['year'];
 		$courseId = $_REQUEST['course'];
-		include "../util_dbHandler.php";
+		include_once "../util_dbHandler.php";
 	}
 
 

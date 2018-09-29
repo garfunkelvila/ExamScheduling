@@ -1,7 +1,7 @@
 <?php
 	#ENUMERATE WHERE IT IS USED
 	#-popup_manage_class.php
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 	$json = array(
 		'sucess' => false,
 		'result' => 0

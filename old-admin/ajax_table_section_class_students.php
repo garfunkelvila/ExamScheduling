@@ -3,7 +3,7 @@
 	<b class="w3-border-bottom w3-border-blue" style="display: table-cell;"></b>
 </div>
 <?php
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 	//-----------------------------------
 	$stmt = null;
 	$stmt = $conn->prepare("SELECT `Id`, CONCAT(`users`.`First Name`, ' ', `users`.`Middle Name`, ' ', `users`.`Family Name`) AS `Full Name` FROM `class_students` JOIN `users` ON `class_students`.`Student Id` = `users`.`Id Number` WHERE `Class Id` = ?");

@@ -5,7 +5,7 @@
 	<b class="w3-border-bottom w3-border-blue" style="display: table-cell;"></b>
 </div>
 <?php
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 
 	$stmt = null;
 	$stmt = $conn->prepare("CALL `select_student_subjects`(?)");

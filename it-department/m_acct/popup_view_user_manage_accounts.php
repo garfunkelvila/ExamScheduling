@@ -1,5 +1,5 @@
 <?php
-	include "../../util_dbHandler.php";
+	include_once "../../util_dbHandler.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,10 +26,10 @@
 		$name = $row[1];
 		switch ($accResult) {
 			case '3':
-				include "popups/fragment_table_popup_student_subjects.php";
+				include_once "popups/fragment_table_popup_student_subjects.php";
 				break;
 			case '4':
-				include "popups/fragment_table_popup_guardian_monitor.php";
+				include_once "popups/fragment_table_popup_guardian_monitor.php";
 				break;
 			default:
 				echo "Only supports student and parents";

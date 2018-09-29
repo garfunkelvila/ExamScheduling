@@ -1,5 +1,5 @@
 <?php
-	include("../../util_dbHandler.php");
+	include_once("../../util_dbHandler.php");
 	$stmt = null;
 	if ($_REQUEST['year'] == "-"){
 		$stmt = $conn->prepare("SELECT `subjects`.`Id`, `subjects`.`Name` FROM `subjects` WHERE `Course Code` = ?;");

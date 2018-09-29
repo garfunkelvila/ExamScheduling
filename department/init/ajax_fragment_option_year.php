@@ -1,6 +1,6 @@
 <option value="-">-Year level-</option>
 <?php
-	include "../../util_dbHandler.php";
+	include_once "../../util_dbHandler.php";
 	$locale = 'en_US';
 	$nf = new NumberFormatter($locale, NumberFormatter::ORDINAL);
 	#SPECIFICALLY JUST FOR INIT SECTIONS

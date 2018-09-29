@@ -1,12 +1,12 @@
 <?php
 	
 	if (!isset($_REQUEST['a'])){
-		#called via include
-		include "../util_dbHandler.php";
+		#called via include_once
+		include_once "../util_dbHandler.php";
 	}
 	else{
 		#called via ajax
-		include "../../util_dbHandler.php";
+		include_once "../../util_dbHandler.php";
 	}
 	if($LoggedInAccesID != '1'){
 		echo "STOP!!! ";
@@ -21,7 +21,7 @@
 		#If a day is selected, show it directly
 		$dayId = $_REQUEST['id'];
 		?><div class="" style="width: 100%; max-width: 8in; display: table; text-align: center;"><?php
-		include "fragment_scheduled_subjects_table.php";
+		include_once "fragment_scheduled_subjects_table.php";
 		?></div><?php
 	}
 	else{
@@ -36,7 +36,7 @@
 				$dayId = $dateRow['Id'];
 				?><h6><?php echo date("F j, Y (l)", strtotime($dateRow["Date"])); ?></h6>
 				<div class="w3-border-top w3-border-blue" style="width: 100%; max-width: 8in; display: table; text-align: center;"><?php
-				include "fragment_scheduled_subjects_table.php";
+				include_once "fragment_scheduled_subjects_table.php";
 				?></div><?php
 			}
 		}

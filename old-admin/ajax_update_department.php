@@ -1,6 +1,6 @@
 <?php
-	include("../util_dbHandler.php");
-	include("../util_validations.php");
+	include_once("../util_dbHandler.php");
+	include_once("../util_validations.php");
 
 	if(isNotEmpty($_REQUEST['deptName']) && isNotEmpty($_REQUEST['deptAccr'])){
 		$stmt = null;

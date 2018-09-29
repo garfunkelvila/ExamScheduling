@@ -1,5 +1,5 @@
 <?php
-	include "../util_dbHandler.php";
+	include_once "../util_dbHandler.php";
 	//-----------------------------------
 	$stmt = null;
 	$stmt = $conn->prepare("SELECT COUNT(`class_students`.`Id`) FROM `class_students` JOIN `classes` ON `class_students`.`Class Id` = `classes`.`Id` JOIN `subjects` ON `classes`.`Subject Id` = `subjects`.`Id` WHERE `classes`.`Section Code Full` = ? AND `subjects`.`Code` = ?");

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
 
 	$dev = isset($_GET['dev']) && $_GET['dev'] == '1' ? true : false;
 ?>
@@ -16,7 +16,7 @@
 </head>
 <body>
 	<script src="/scripts/jquery-3.2.1.min.js"></script>
-	<?php include "fragment_header.php" ?>
+	<?php include_once "fragment_header.php" ?>
 	<div class="w3-row w3-margin-top">
 		<div class="my-third w3-container">
 			<div class="w3-hide-small">
@@ -64,10 +64,10 @@
 					<button class="my-button my-blue w3-section w3-hoverable" type="submit" onclick="validateIdNumber()">Register</button>
 				</div>
 			</form>
-			<?php include "m_acct/fragment_registered_accounts.php" ?>
+			<?php include_once "m_acct/fragment_registered_accounts.php" ?>
 		</div>
 	</div>
-	<?php include "fragment_footer.php" ?>
+	<?php include_once "fragment_footer.php" ?>
 	<script type="text/javascript">
 		function showPopup(dir, name){
 			//second parameter helps prevents duplication of window

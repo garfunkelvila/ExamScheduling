@@ -1,7 +1,7 @@
 
 <?php
-	include("../util_dbHandler.php");
-	include("../util_validations.php");
+	include_once("../util_dbHandler.php");
+	include_once("../util_validations.php");
 	#**********************
 	$locale = 'en_PH';
 	$nf = new NumberFormatter($locale, NumberFormatter::ORDINAL);
@@ -16,10 +16,10 @@
 			<b class="w3-container w3-border-bottom" style="display: block;"><?php echo $nf->format($yearRow['Year Level']); ?></b>
 			<div class="w3-cell-row w3-container">
 				<div class="my-cell" style="width: 50%">
-					<?php include("fragment_table_subjects_by_course_item_subjects.php"); ?>
+					<?php include_once("fragment_table_subjects_by_course_item_subjects.php"); ?>
 				</div>
 				<div class="my-cell" style="width: 50%">
-					<?php #include("fragment_table_subjects_by_course_item_classes.php"); ?>
+					<?php #include_once("fragment_table_subjects_by_course_item_classes.php"); ?>
 				</div>
 			</div>
 			<?php

@@ -1,7 +1,7 @@
 <?php
-	include "../../util_dbHandler.php";
-	include("../../util_check_stage.php");
-	include("../util_check_isEndorsed.php");
+	include_once "../../util_dbHandler.php";
+	include_once("../../util_check_stage.php");
+	include_once("../util_check_isEndorsed.php");
 
 	$locale = 'en_US';
 	$nf = new NumberFormatter($locale, NumberFormatter::ORDINAL);

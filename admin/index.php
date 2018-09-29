@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
-	include "../util_dbHandler.php";
-	include("util_check_session.php");
-	include("../util_greeting.php");
+	include_once "../util_dbHandler.php";
+	include_once("util_check_session.php");
+	include_once("../util_greeting.php");
 ?>
 
 <html>
@@ -44,8 +44,8 @@
 </head>
 <body>
 	<script src="/scripts/jquery-3.2.1.min.js"></script>
-	<?php include "fragment_header.php" ?>
-	<?php #include "../fragment_changepass_dlg.php" ?>
+	<?php include_once "fragment_header.php" ?>
+	<?php #include_once "../fragment_changepass_dlg.php" ?>
 	<div class="w3-row w3-margin-top">
 		<div class="w3-container" style="">
 			<div align="center">
@@ -56,7 +56,7 @@
 			</div>
 			<br><br><hr>
 			<div class="w3-center">
-				<?php include "../fragment_changepass_card.php" ; ?>
+				<?php include_once "../fragment_changepass_card.php" ; ?>
 				<a href="exam_dates.php" class="w3-card-4 w3-margin home-link" style="overflow: auto; height: 1.5in;">
 					<header class="w3-container my-blue">
 						<h6 style="">Manage Exam Dates</h6>
@@ -78,7 +78,7 @@
 			</div>
 		</div>
 	</div>
-	<?php include "fragment_footer.php" ?>
+	<?php include_once "fragment_footer.php" ?>
 	<script type="text/javascript">
 	</script>
 </body>
