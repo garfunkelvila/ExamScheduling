@@ -59,7 +59,7 @@
 			if ($sRow[2] == 0)
 				$json['result'] = "Endorsment already exist";
 			if ($sRow[3] == 0)
-				$json['result'] = "Proctor is not available, try another room that uses different time." . $sRow[0] . $sRow[1] . $sRow[3] . $sRow[3];
+				$json['result'] = "Proctor is not available, try another room that uses different time.";
 			echo json_encode($json);
 		}
 	}
